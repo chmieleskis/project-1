@@ -1,0 +1,634 @@
+:root {
+    --font-o: "Open Sans", sans-serif;
+    --font-r: 'Raleway', sans-serif;
+
+    --deeppink: #FB3B64;
+    --blue: #08A6E4;
+    --aquamarine: #55DFB4;
+    --gray: #A5A5A5;
+    --lightgray: #F7F7F7;
+    --gray-shadow: #00000029;
+    --blue-shadow: #07ACE629;
+    --gray-form: #95989A
+}
+
+html {
+    font-size: 10px;
+}
+
+
+/* ---------- HEADER ------------------------------------------------------------------------------------------------ */
+
+
+header {
+    width: calc(100vw - 1.5rem);
+    height:  7rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 .3rem .6rem var(--gray-shadow);
+}
+
+.logo {
+    font-family: var(--font-r);
+    font-size: 3.2rem;
+    line-height: 3.7rem;
+    color: var(--blue);
+    text-decoration: none;
+
+}
+ul{
+    display: flex;
+}
+
+ul li {
+    list-style-type: none;
+    padding-left: 9.5rem;
+    height: 100%;
+}
+
+li a {
+    height: 100%;
+    font-family: var(--font-o);
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    color: var(--gray);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .33rem;
+}
+
+li a:hover {
+    color: #000000;
+    padding-bottom: 2.5rem;
+    border-bottom:  .4rem solid var(--blue);
+}
+
+/* ---------- SEKCJA 1 ---------------------------------------------------------------------------------------------- */
+
+.section-1 {
+    height: calc(100vh - 7rem);
+    width:  calc(100vw - 1.5rem);
+    background-image: url("../assets/Background.png");
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: var(--font-r);
+    font-size: 4.9rem;
+    line-height: 5.7rem;
+    padding-top: 12rem;
+}
+
+.section-1 div {
+    font-family: var(--font-r);
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    padding-top: 2rem;
+}
+
+.section-1 a {
+    padding: 2.2rem 16rem;
+    background-color: var(--blue);
+    border-radius: 40px;
+    color: #FFFFFF;
+    font-family: var(--font-o);
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: .5rem 1rem 1.4rem var(--blue-shadow);
+    margin-top: 3.8rem;
+}
+
+.section-1 a:hover {
+    border: 2px solid var(--deeppink);
+}
+
+.section-1 a:active {
+    box-shadow: .5rem 1rem 1.4rem var(--deeppink);
+}
+
+/* ---------- SEKCJA 2 ---------------------------------------------------------------------------------------------- */
+
+h2 {
+    font-family: var(--font-r);
+    font-size: 3.6rem;
+    line-height: 4.2rem;
+}
+
+.section-2 h2 {
+    padding-top: 10rem;
+    text-align: center;
+}
+
+.section-2 div {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section-2-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    width: 6.3rem;
+    height: 6.3rem;
+    border-radius: 50%;
+}
+
+.circle-1 {
+    background-color: var(--deeppink);
+}
+
+.circle-2 {
+    background-color: var(--blue);
+}
+
+.circle-3 {
+    background-color: var(--aquamarine);
+}
+
+.icon {
+    margin-left: 80%;
+}
+
+.section-2-box p {
+    font-family: var(--font-r);
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: .6rem;
+    line-height: 2.4rem;
+    padding-top: 2.2rem;
+}
+
+span {
+    font-family: var(--font-r);
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: var(--grey);
+    padding: 2rem 0 15rem 0;
+}
+
+/* ---------- SEKCJA 3----------------------------------------------------------------------------------------------- */
+
+.section-3 {
+    width: calc(100vw - 1.5 rem);
+    background-color: var(--lightgray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 61%;
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    background-color: #ffffff;
+    width: 100%;
+    height: 37rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-1 {
+    box-sizing: border-box;
+    margin-top: 10.5rem;
+    padding: 0 7rem 0 3.5rem;
+}
+
+.box-2 {
+    box-sizing: border-box;
+    margin-top: 3.7rem;
+    padding: 0 2rem 0 7rem;
+}
+
+.image-1 {
+    height: 17rem;
+    width: 17rem;
+    background-color: var(--deeppink);
+    border-radius: 40px;
+    transform: rotate(45deg);
+}
+
+.mac {
+    transform: rotate(-45deg);
+    width: 200%;
+    height: auto;
+    padding-right: 10rem;
+    padding-bottom: 45rem;
+}
+
+.image-2 {
+    height: 32rem;
+    width: 32rem;
+    background-color: var(--blue);
+    border-radius: 50%;
+}
+
+.iphone {
+    width: 130%;
+    height: auto;
+    padding-top: 2.5rem;
+}
+
+.text {
+    width: 41.5rem;
+    padding: 3rem 0 5rem 0;
+    position: relative;
+    font-family: var(--font-o);
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+}
+
+.text-1:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 70%;
+    border-bottom: 4px solid var(--deeppink);
+}
+
+.text-2:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 70%;
+    border-bottom: 4px solid var(--blue);
+}
+
+.container-2 {
+    margin: 3.7rem 0 10.5rem 0;
+    width: 61%;
+    height: 37rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-text {
+    box-sizing: border-box;
+    padding-left: 3.5rem;
+    width: 56%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-text p{
+    width: 80%;
+    font-family: var(--font-o);
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    padding: 3rem 0 4rem 0;
+    position: relative;
+}
+
+.box-text p:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 70%;
+    border-bottom: 4px solid var(--aquamarine);
+}
+
+.box-image {
+    height: 100%;
+    width: 38%;
+    background-color: var(--aquamarine);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trumpet {
+    width: 70%;
+    height: auto;
+}
+/* ---------- sekcja 4 ---------------------------------------------------------------------------------------------  */
+
+.section-4 {
+    background-color: white;
+    width: calc(100vw - 1.5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-4 h2 {
+    margin: 10.5rem 0 5rem 0;
+}
+.pricing-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 60rem;
+}
+
+.pricing-plans {
+    width: 25%;
+    height: 80%;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.pricing-plans:nth-child(1) {
+    border: 1px solid var(--deeppink);
+}
+
+.pricing-plans:nth-child(2) {
+    border: 1px solid var(--blue);
+    margin: 0 6rem;
+    flex-grow: 1.3;
+    height: 90%;
+    box-shadow: .5rem 1rem 2.7rem #07ACE629;
+}
+
+.pricing-plans:nth-child(3) {
+    border: 1px solid var(--aquamarine);
+}
+
+h3 {
+    font-family: var(--font-r);
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin: 3.8rem 0 1.4rem 0;
+}
+
+.prices {
+    font-family: var(--font-o);
+    font-size: 4.6rem;
+    line-height: 6.4rem;
+    font-weight: 300;
+}
+
+.priceOne {
+    color: var(--deeppink);
+    padding-bottom: 7rem;
+}
+
+.priceTwo {
+    color: var(--blue);
+}
+
+.priceThree{
+    color: var(--aquamarine)
+}
+
+.limited {
+    font-family: var(--font-r);
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-top: 1rem;
+}
+
+.limitedOne {
+    padding-bottom: 7.5rem;
+}
+
+.limitedTwo {
+    padding-bottom: 4.8rem;
+}
+.pricing-plans img {
+    width: 1.1rem;
+    height: 1.1rem;
+}
+.pricing-plans span {
+    font-family: var(--font-o);
+    font-size: 1.4rem;
+    line-height: 4.1rem;
+    padding-left: 1rem;
+}
+
+.pricing-plans a {
+    color: white;
+    font-family: var(--font-o);
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    padding: 1.6rem 5.7rem;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 23px;
+    margin-top: 4.3rem;
+}
+
+.pricing-plans:nth-child(1) a{
+    background-color: var(--deeppink);
+}
+.pricing-plans:nth-child(2) a{
+    background-color: var(--blue);
+    margin-top: 7.6rem;
+    box-shadow: .5rem 1rem 1.4rem #07ACE629;
+}
+.pricing-plans:nth-child(3) a{
+    background-color: var(--aquamarine);
+}
+/* ---------- sekcja 5 ---------------------------------------------------------------------------------------------  */
+
+
+.section-5 {
+    width: calc(100vw - 1.5rem);
+    display: flex;
+    justify-content: center;
+    margin: 10rem 0 0 0;
+}
+
+.section-5 h1 {
+    padding-top: 0;
+}
+
+.info {
+    font-family: var(--font-o);
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    padding: 2.2rem 0 4rem 0;
+}
+
+.details {
+    font-family: var(--font-o);
+    font-size: 1.6rem;
+    text-decoration: none;
+    line-height: 2.2rem;
+    font-weight: 600;
+    color: var(--gray);
+    padding-right: 2rem;
+}
+
+.contact-icon{
+    padding-right: 1rem;
+}
+
+.form-box {
+    margin: 0 0 0 11.5rem;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-family: var(--font-o);
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .33rem;
+    color: var(--blue);
+    }
+
+.input-text {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--gray-form);
+    font-size: 1.8rem;
+    font-family: var(--font-r);
+    font-weight: 500;
+    line-height: 2.6rem;
+    padding: .5rem 0;
+    margin: .5rem 0 4rem 0;
+}
+
+.input-text:hover {
+    border-bottom: 1px solid var(--blue);
+}
+
+.input-text:focus {
+    border-bottom: 1px solid var(--blue);
+}
+
+.checkbox {
+    display: flex;
+}
+
+.checkbox-btn[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    margin-top: 3rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    border: 1px solid var(--gray-form);
+    border-radius: 4px;
+    cursor: pointer;
+    background: #ffffff;
+}
+
+.checkbox-btn:hover {
+    border: 1px solid var(--blue);
+}
+
+.checkbox-btn:checked {
+    background: #ffffff;
+    border: 1px solid var(--blue);
+}
+
+.checkbox-btn:checked:after {
+    content: url('../assets/Checkmark.svg');
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+    padding: .6rem;
+}
+
+.checkbox-btn:hover {
+    border: 1px solid var(--blue);
+}
+
+.checkbox p {
+    font-family: var(--font-o);
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    width: 40.5rem;
+    color: #707070;
+    padding: 3rem 0 2rem 1.6rem;
+}
+/* --------------------- TU SĄ PROBLEMY
+przycisk musi mieć margines albo rozciąga się na całą dostępną szerokość -------------------------*/
+.btn {
+    display: block;
+    font-family: var(--font-o);
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.rem;
+    padding: 2rem 9.7rem;
+    border: 0;
+    border-radius: 35px;
+    background-color: var(--blue);
+    color: #ffffff;
+    margin: 2rem 0 0 21.5rem;
+    box-shadow: .5rem 1rem 1.4rem var(--blue-shadow);
+}
+
+.btn:hover {
+    border: 2px solid var(--deeppink);
+}
+
+.btn:active {
+    box-shadow: .5rem 1rem 1.4rem var(--deeppink);
+}
+/* ---------- FOOTER -----------------------------------------------------------------------------------------------  */
+
+footer {
+    width: calc(100vw - 1.5rem);
+    height: 8.7rem;
+    background-color: var(--lightgray);
+    box-shadow: 0 -.5rem 4rem var(--gray-shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.footer-logo-box{
+    margin-left: 13.5rem;
+}
+
+.logo-footer {
+    font-family: var(--font-r);
+    font-size: 2.6rem;
+    text-decoration: none;
+    line-height: 3rem;
+    color: var(--blue);
+}
+
+.footer-text {
+    font-family: var(--font-o);
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: var(--gray);
+    padding-top: .7rem;
+}
+
+.facebook {
+    padding: 0 13.5rem 0 2rem;
+}
