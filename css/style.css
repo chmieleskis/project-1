@@ -174,14 +174,14 @@ span {
     font-family: var(--font-r);
     font-size: 1.6rem;
     line-height: 2rem;
-    color: var(--grey);
+    color: var(--gray);
     padding: 2rem 0 15rem 0;
 }
 
 /* ---------- SEKCJA 3----------------------------------------------------------------------------------------------- */
 
 .section-3 {
-    width: calc(100vw - 1.5 rem);
+    width: calc(100vw - 1.5rem);
     background-color: var(--lightgray);
     display: flex;
     flex-direction: column;
@@ -202,6 +202,8 @@ span {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
 }
 
 .box-1 {
@@ -286,6 +288,8 @@ span {
     width: 56%;
     height: 100%;
     background-color: #ffffff;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -316,6 +320,7 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
 }
 
 .trumpet {
@@ -341,6 +346,7 @@ span {
     align-items: center;
     width: 70%;
     height: 60rem;
+    margin-bottom: 9.5rem;
 }
 
 .pricing-plans {
@@ -434,6 +440,10 @@ h3 {
     margin-top: 4.3rem;
 }
 
+.pricing-plans a:active {
+    box-shadow: .5rem 1rem 1.4rem var(--deeppink);
+}
+
 .pricing-plans:nth-child(1) a{
     background-color: var(--deeppink);
 }
@@ -442,9 +452,236 @@ h3 {
     margin-top: 7.6rem;
     box-shadow: .5rem 1rem 1.4rem #07ACE629;
 }
+
+.pricing-plans:nth-child(2) a:active {
+    box-shadow: .5rem 1rem 1.4rem var(--deeppink);
+}
 .pricing-plans:nth-child(3) a{
     background-color: var(--aquamarine);
 }
+
+/* ---------- KALKULATOR -------------------------------------------------------------------------------------------  */
+.sectionAdded {
+    width: calc(100vw - 1.5rem);
+    background-color: var(--lightgray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font-o);
+}
+
+.sectionAdded h2 {
+    margin: 9.5rem 0 5rem;
+}
+.calculator {
+    width: 50%;
+    margin-bottom: 9.5rem;
+    display: flex;
+}
+
+.inputs {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.calcInput {
+    width: 100%;
+    height: 4rem;
+    background-color: white;
+    margin-bottom: 2rem;
+    border: 1px solid var(--blue);
+    border-radius: 6px;
+    box-shadow: 0 .3rem .6rem #08A6E429;
+    padding-left: 2rem;
+}
+
+.calcInput::placeholder {
+    color: var(--gray);
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+}
+
+.calcInput:hover {
+    cursor: pointer;
+}
+
+.calcInput:focus {
+    border: 1px solid var(--deeppink);
+}
+
+.numberInput::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance:textfield;
+}
+
+/* -------------------------- Dropdown ------------------------------------------------------------------------------ */
+
+.dropbtn {
+    background-color: white;
+    color: var(--gray);
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    border: 1px solid var(--blue);
+    width: 100%;
+    height: 4rem;
+    border-radius: 6px;
+    text-align: left;
+    padding-left: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+};
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown img {
+    float:right;
+    margin-right: 1rem;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 1rem;
+    background-color: white;
+    border: 1px solid var(--deeppink);
+    border-radius: 6px;
+    width: 24.9%;
+    z-index: 1;
+}
+
+.dropdown-content option{
+    width: 85%;
+    height: 33.333%;
+    color: black;
+    font-family: var(--font-o);
+    font-size: 1.3rem;
+    padding: 1.2rem 2rem;
+    margin-left: 3px;
+    display: block;
+}
+
+
+.dropdown-content option:hover {
+    cursor: pointer;
+    background-color: var(--lightgray);
+};
+
+
+.dropdown-content {
+    display: block;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+.checkboxes {
+    display: flex;
+    align-items: center;
+}
+
+.checkboxes p {
+    font: var(--font-o);
+    font-size: 1.2rem;
+    margin: 3rem 0 0 1rem;
+}
+
+
+.summary {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.calcInfos {
+    width: 85%;
+    height: 3.1rem;
+    background-color: var(--aquamarine);
+    margin-bottom: .8rem;
+    border-radius: 6px;
+    box-shadow: 0 .3rem .6rem var(--gray-shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+};
+
+
+.calcInfos p {
+    display: block;
+    float: left;
+    width: 30%;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
+
+.calcInfos p:nth-child(1) {
+    color: white;
+    padding-left: 2rem;
+    font-size: 1.3rem;
+    margin-right: 5%;
+}
+
+.calcInfos p:nth-child(2) {
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-right: 5%;
+}
+
+.calcInfos p:nth-child(3) {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-right: 2rem;
+}
+
+/*.sum p:nth-child(2) {*/
+/*    padding-right: 2rem;*/
+/*    text-align: right;*/
+/*    font-size: 2rem;*/
+/*    line-height: 2.7rem;*/
+/*    font-weight: 700;*/
+
+
+
+.sum {
+    display: flex;
+    align-items: center;
+    width: 18rem;
+    height: 3.8rem;
+    background-color: var(--blue);
+    border-radius: 6px;
+    margin-top: 1.6rem;
+}
+
+.sum p {
+    width: 50%;
+    padding: 0 2rem;
+    color: white;
+
+}
+
+.sum p:nth-child(1) {
+    padding-left: 2rem;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
+.sum p:nth-child(2) {
+    padding-right: 2rem;
+    text-align: right;
+    font-size: 2rem;
+    line-height: 2.7rem;
+    font-weight: 700;
+}
+
+
+
+
+
 /* ---------- sekcja 5 ---------------------------------------------------------------------------------------------  */
 
 
@@ -493,7 +730,7 @@ form {
     flex-direction: column;
 }
 
-label {
+.form-label {
     font-family: var(--font-o);
     font-size: 1.1rem;
     font-weight: bold;
@@ -527,7 +764,7 @@ label {
     display: flex;
 }
 
-.checkbox-btn[type="checkbox"] {
+.checkbox-btn {
     -webkit-appearance: none;
     -moz-appearance:    none;
     appearance:         none;
@@ -579,7 +816,7 @@ przycisk musi mieć margines albo rozciąga się na całą dostępną szerokoś�
     font-family: var(--font-o);
     font-size: 1.3rem;
     font-weight: bold;
-    line-height: 1.rem;
+    line-height: 1.8rem;
     padding: 2rem 9.7rem;
     border: 0;
     border-radius: 35px;

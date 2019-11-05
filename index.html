@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
 </head>
 <body>
     <header>
@@ -27,23 +28,22 @@
         <div>Open shop on our platform and increase your sales</div>
         <a href="">Open your shop</a>
     </section>
-
 <!-- -------------------------------------------------------------------------------------------------------------- -->
     <section class="section-2">
         <h2>The most popular sales platform in country</h2>
         <div>
             <div class="section-2-box">
-                <div class="circle circle-1"><img class="icon icon-1" src="assets/Person.svg"></div>
+                <div class="circle circle-1"><img class="icon icon-1" src="assets/Person.svg"/></div>
                 <p>100000+</p>
                 <span>daily entries</span>
             </div>
             <div class="section-2-box">
-                <div class="circle circle-2"><img class="icon icon-2" src="assets/Eye.svg"></div>
+                <div class="circle circle-2"><img class="icon icon-2" src="assets/Eye.svg"/></div>
                 <p>2000000+</p>
                 <span>seen products every day</span>
             </div>
             <div class="section-2-box">
-                <div class="circle circle-3"><img class="icon icon-3" src="assets/Catalog.svg"></div>
+                <div class="circle circle-3"><img class="icon icon-3" src="assets/Catalog.svg"/></div>
                 <p>10000+</p>
                 <span>added posts daily</span>
             </div>
@@ -62,12 +62,12 @@
                         sapiente!</p>
                 </div>
                 <div>
-                    <div class="image-1"><img class="mac" src="assets/Macbook.png"></div>
+                    <div class="image-1"><img class="mac" src="assets/Macbook.png"/></div>
                 </div>
             </div>
             <div class="box box-2">
                 <div>
-                    <div class="image-2"><img class="iphone" src="assets/iPhone.png"></div>
+                    <div class="image-2"><img class="iphone" src="assets/iPhone.png"/></div>
                 </div>
                 <div>
                     <h2>Your shop is<br>where you are!</h2>
@@ -83,7 +83,7 @@
                 <h2>Increase recognition<br>your brand!</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi est, ex mollitia nulla quia repellat sapiente similique. Ducimus exercitationem facilis impedit itaque laudantium modi nisi nulla quam sit vel. Eius esse itaque natus nostrum rem.</p>
             </div>
-            <div class="box-image"><img class="trumpet" src="assets/Trumpet.png" </div>
+            <div class="box-image"><img class="trumpet" src="assets/Trumpet.png"/></div>
         </div>
     </section>
 <!-- --------------------------------------------------------------------------------------------------------------  -->
@@ -126,6 +126,56 @@
     </section>
 
 <!-- --------------------------------------------------------------------------------------------------------------  -->
+    <section class="sectionAdded">
+        <h2>Calculate how much you'll pay</h2>
+        <div class="calculator">
+            <div class="inputs">
+                <input class="calcInput numberInput" id='products' type="number" placeholder="Products quantity">
+                <input class="calcInput numberInput" id='orders' type="number" placeholder="Estimated ordes in month">
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <p class="dropbtnText">Choose package</p>
+                        <img class='dropdownImg' src="assets/ArrowDown.svg" alt="">
+                    </button>
+                    <div class="dropdown-content">
+                        <option value="Basic">Basic</option>
+                        <option value="Professional">Professional</option>
+                        <option value="Premium">Premium</option>
+                    </div>
+                </div>
+                <div class="checkboxes">
+                    <input class='checkbox-btn' id='accounting' type="checkbox" checked='checked'>
+                    <p>Accounting</p>
+                </div>
+                <div class="checkboxes">
+                    <input class='checkbox-btn' id='terminal' type="checkbox" checked='checked'>
+                    <p>Rental of a payment terminal</p>
+                </div>
+            </div>
+            <div class="summary">
+                <div class="calcInfos">
+                    <p>Products</p><p class="calculateProducts"></p><p class="sumPart1"></p>
+                </div>
+                <div class="calcInfos">
+                    <p>Orders</p><p class="calculateOrders"></p><p class="sumPart2"></p>
+                </div>
+                <div class="calcInfos">
+                    <p>Package</p><p class="packageType"></p><p class="sumPart3"></p>
+                </div>
+                <div class="calcInfos">
+                    <p>Accounting</p><p></p><p class="sumPart4">$120</p>
+                </div>
+                <div class="calcInfos">
+                    <p>Terminal</p><p></p><p class="sumPart5">$30</p>
+                </div>
+                <div class="sum">
+                    <p>Total</p><p class="total"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- --------------------------------------------------------------------------------------------------------------  -->
    <section class="section-5">
        <div class="info-box">
            <h1>Any questions?</h1>
@@ -140,17 +190,17 @@
        <div class="form-box">
            <form>
                <div class="form-field">
-                   <label for="name">name</label>
+                   <label class="form-label">name</label>
                    <input class="input-text" type="text"/>
                </div>
                <div class="form-field">
-                   <label for="email">Email</label>
+                   <label class="form-label">Email</label>
                    <input class="input-text" type="email"/>
                </div>
-               <div class="checkbox">
-                   <input class="checkbox-btn" type="checkbox" checked="checked">
-                   <p>I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
-               </div>
+               <label for='checkboxId' class="checkbox">
+                   <input class="checkbox-btn" id='checkboxId' type="checkbox" checked="checked">
+                   <p class="agreement">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
+               </label>
                <button type="submit" class="btn">Send</button>
            </form>
        </div>
