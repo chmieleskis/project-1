@@ -524,7 +524,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-};
+}
 
 .dropdown {
     position: relative;
@@ -543,28 +543,24 @@ h3 {
     background-color: white;
     border: 1px solid var(--deeppink);
     border-radius: 6px;
-    width: 24.9%;
+    width: 100%;
     z-index: 1;
 }
 
 .dropdown-content option{
-    width: 85%;
+    width: 87%;
     height: 33.333%;
     color: black;
     font-family: var(--font-o);
     font-size: 1.3rem;
     padding: 1.2rem 2rem;
-    margin-left: 3px;
+    margin: 0 2.5%;
     display: block;
 }
 
 .dropdown-content option:hover {
     cursor: pointer;
     background-color: var(--lightgray);
-};
-
-.dropdown-content {
-    display: block;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
@@ -625,6 +621,7 @@ h3 {
     font-size: 1.3rem;
     font-weight: 700;
     margin-right: 2rem;
+    text-align: right;
 }
 
 .sum {
