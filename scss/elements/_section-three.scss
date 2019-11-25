@@ -1,0 +1,275 @@
+.section-3 {
+  background-color: var(--lightgray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.container-1 {
+  width: 61%;
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  background-color: #ffffff;
+  width: 100%;
+  min-height: 37rem;
+  display: flex;
+}
+
+.box-1 {
+  margin-top: 10.5rem;
+}
+
+.box-2 {
+  margin-top: 3.7rem;
+}
+
+.box .box-div {
+  width: 50%;
+  height: 100%;
+  position: relative;
+
+}
+
+.square {
+  position: absolute;
+  top: 7rem;
+  left: 18rem;
+  height: 17rem;
+  width: 17rem;
+  background-color: var(--deeppink);
+  border-radius: 40px;
+  transform: rotate(45deg);
+}
+
+.mac {
+  width: 80%;
+  position: absolute;
+  top: 12rem;
+  left: .5rem;
+}
+//.container {
+//  width: 61%;
+//  display: flex;
+//  flex-direction: column;
+//}
+//
+//.box {
+//  background-color: #ffffff;
+//  width: 100%;
+//  min-height: 37rem;
+//  display: flex;
+//  justify-content: space-between;
+//  align-items: center;
+//  border: 1px solid #E8E9ED;
+//  border-radius: 5px;
+//  padding: 0 3.5rem;
+//}
+//
+//
+//.box-1 {
+//  box-sizing: border-box;
+//  margin-top: 10.5rem;
+//  max-height: 37rem;
+//}
+//
+//.box-1 div {
+//  width: 50%;
+//  height: 100%;
+//}
+//.box-1 div:nth-child(2) {
+//  display: flex;
+//  justify-content: flex-end;
+//}
+//
+//.box-2 {
+//  box-sizing: border-box;
+//  margin-top: 3.7rem;
+//}
+//
+//.image-1 {
+//  height: 17rem;
+//  width: 17rem;
+//  background-color: var(--deeppink);
+//  border-radius: 40px;
+//  transform: rotate(45deg);
+//}
+//
+//.mac {
+//  transform: rotate(-45deg);
+//  width: 200%;
+//  height: auto;
+//  padding-right: 10rem;
+//  padding-bottom: 45rem;
+//}
+//
+//.image-2 {
+//  height: 32rem;
+//  width: 32rem;
+//  background-color: var(--blue);
+//  border-radius: 50%;
+//}
+//
+//.iphone {
+//  width: 130%;
+//  height: auto;
+//  padding-top: 2.5rem;
+//}
+//
+//.text {
+//  padding: 3rem 0 5rem 0;
+//  position: relative;
+//  font-family: var(--font-o);
+//  font-size: 1.6rem;
+//  line-height: 2.2rem;
+//}
+//
+//.text-1:before {
+//  content: "";
+//  position: absolute;
+//  left: 0;
+//  bottom: 0;
+//  width: 70%;
+//  border-bottom: 4px solid var(--deeppink);
+//}
+//
+//.text-2:before {
+//  content: "";
+//  position: absolute;
+//  left: 0;
+//  bottom: 0;
+//  width: 70%;
+//  border-bottom: 4px solid var(--blue);
+//}
+
+.container-2 {
+  margin: 3.7rem 0 10.5rem 0;
+  width: 61%;
+  height: 37rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-text {
+  box-sizing: border-box;
+  padding-left: 3.5rem;
+  width: 56%;
+  height: 100%;
+  background-color: #ffffff;
+  border: 1px solid #E8E9ED;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box-text p{
+  width: 80%;
+  font-family: var(--font-o);
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  padding: 3rem 0 4rem 0;
+  position: relative;
+}
+
+.box-text p:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 70%;
+  border-bottom: 4px solid var(--aquamarine);
+}
+
+.box-image {
+  height: 100%;
+  width: 38%;
+  background-color: var(--aquamarine);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.trumpet {
+  width: 70%;
+  height: auto;
+}
+
+@media (max-width: 1000px) {
+  .section-3 {
+    height: auto;
+    .box {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem 3.5rem 0;
+      h2 {
+        font-size: 3rem;
+        line-height: 3.6rem;
+        width: 90%;
+        padding: 2rem 0 0 0;
+        margin-top: 3.5rem;
+      }
+      .text {
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+        width: 90%;
+        &:before {
+          display: none;
+        }
+      }
+    }
+    .box-1 {
+      flex-direction: column-reverse;
+      width: 100%;
+      .image-1 {
+         width: 9rem;
+         height: 9rem;
+         margin-left: 6rem;
+         .mac {
+            padding: 0 5rem 30rem;
+         }
+        }
+    }
+
+    .box-2 {
+      .image-2 {
+        width: 13.2rem;
+        height: 13.2rem;
+      }
+    }
+  }
+  .container-2 {
+    flex-direction: column;
+    height: auto;
+    .box-text {
+      width: 100%;
+      h2 {
+        font-size: 3rem;
+        line-height: 3.6rem;
+        width: 90%;
+        margin-top: 3.5rem;
+        padding-left: 0;
+      }
+      p {
+        width: 90%;
+        &:before {
+          display: none;
+        }
+      }
+    }
+    .box-image {
+      margin-top: -1rem;
+      width: 100%;
+      .trumpet {
+        margin-top: 15%;
+      }
+    }
+  }
+}

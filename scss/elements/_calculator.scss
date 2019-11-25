@@ -1,0 +1,240 @@
+.sectionAdded {
+  background-color: var(--lightgray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-o);
+}
+
+.sectionAdded h2 {
+  text-align: center;
+  margin: 9.5rem 0 5rem 0;
+  width: 70%;
+}
+
+.calculator {
+  width: 60%;
+  margin-bottom: 9.5rem;
+  display: flex;
+}
+
+.inputs {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.calcInput {
+  width: 100%;
+  height: 4rem;
+  background-color: white;
+  margin-bottom: 2rem;
+  border: 1px solid var(--blue);
+  border-radius: 6px;
+  box-shadow: 0 .3rem .6rem #08A6E429;
+  padding-left: 2rem;
+}
+
+.calcInput::placeholder {
+  color: var(--gray);
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+
+.calcInput:hover {
+  cursor: pointer;
+}
+
+.calcInput:focus {
+  border: 1px solid var(--deeppink);
+}
+
+.numberInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance:textfield;
+}
+
+/* -------------------------- Dropdown ------------------------------------------------------------------------------ */
+.dropbtn {
+  background-color: white;
+  color: var(--gray);
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  border: 1px solid var(--blue);
+  width: 100%;
+  height: 4rem;
+  border-radius: 6px;
+  text-align: left;
+  padding-left: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown img {
+  float:right;
+  margin-right: 1rem;
+}
+
+.dropdown-content {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  margin-top: 1rem;
+  background-color: white;
+  border: 1px solid var(--deeppink);
+  border-radius: 6px;
+  width: 100%;
+  z-index: 1;
+}
+
+.dropdown-content.clicked {
+  display: flex;
+}
+
+.dropdownImg.clicked {
+  transform: rotate(180deg);
+}
+
+.dropdown-content option{
+  width: 80%;
+  height: 33.333%;
+  color: black;
+  font-family: var(--font-o);
+  font-size: 1.3rem;
+  padding: 1.2rem 2rem;
+  margin: 0 2.5%;
+  display: block;
+}
+
+.dropdown-content option:hover {
+  cursor: pointer;
+  background-color: var(--lightgray);
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+.checkboxes {
+  display: flex;
+  align-items: center;
+}
+
+.checkboxes p {
+  font: var(--font-o);
+  font-size: 1.2rem;
+  margin: 3rem 0 0 1rem;
+}
+
+.summary {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.calcInfos {
+  width: 85%;
+  height: 3.1rem;
+  background-color: var(--aquamarine);
+  margin-bottom: .8rem;
+  border-radius: 6px;
+  box-shadow: 0 .3rem .6rem var(--gray-shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+};
+
+.calcInfos p {
+  display: block;
+  float: left;
+  width: 30%;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+}
+
+.calcInfos p:nth-child(1) {
+  color: white;
+  padding-left: 2rem;
+  font-size: 1.3rem;
+  margin-right: 5%;
+}
+
+.calcInfos p:nth-child(2) {
+  color: white;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-right: 5%;
+}
+
+.calcInfos p:nth-child(3) {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-right: 2rem;
+  text-align: right;
+}
+
+.sum {
+  display: flex;
+  align-items: center;
+  width: 18rem;
+  height: 3.8rem;
+  background-color: var(--blue);
+  border-radius: 6px;
+  margin-top: 1.6rem;
+}
+
+.sum p {
+  width: 50%;
+  padding: 0 2rem;
+  color: white;
+}
+
+.sum p:nth-child(1) {
+  padding-left: 2rem;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+}
+
+.sum p:nth-child(2) {
+  padding-right: 2rem;
+  text-align: right;
+  font-size: 2rem;
+  line-height: 2.7rem;
+  font-weight: 700;
+}
+
+@media (max-width: 1050px) {
+  h2 {
+    padding: 0 1.5rem;
+  }
+  .calculator {
+    flex-direction: column;
+    align-items: center;
+    .inputs {
+      width: 80%;
+    }
+    .summary {
+      margin-top: 4rem;
+      width: 80%;
+      .calcInfos {
+        width: 100%;
+      }
+      .sum {
+        width: 65%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .sectionAdded {
+    margin-top: 63rem;
+  }
+}

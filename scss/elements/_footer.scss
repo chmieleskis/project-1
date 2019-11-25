@@ -1,0 +1,45 @@
+footer {
+  height: 8.7rem;
+  background-color: var(--lightgray);
+  box-shadow: 0 -.5rem 4rem var(--gray-shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.footer-logo-box{
+  margin-left: 13.5rem;
+}
+
+.logo-footer {
+  font-family: var(--font-r);
+  font-size: 2.6rem;
+  text-decoration: none;
+  line-height: 3rem;
+  color: var(--blue);
+}
+
+.footer-text {
+  font-family: var(--font-o);
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  color: var(--gray);
+  padding-top: .7rem;
+}
+
+.social-media {
+  padding-right: 13.5rem;
+}
+.facebook {
+  padding-left: 2rem;
+}
+
+@media (max-width: 1000px) {
+  .footer-logo-box {
+    margin-left: 2.5rem;
+  }
+  .social-media {
+    padding-right: 3rem;
+  }
+}

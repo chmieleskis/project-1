@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+
     let one = 0;
     let two = 0;
     let three = 0;
@@ -23,12 +24,14 @@ document.addEventListener('DOMContentLoaded', function () {
     products.addEventListener('input', function () {
         if (Number.isInteger(parseFloat(this.value)) && parseFloat(this.value) > 0) {
             calculateProducts.innerText = this.value + ' * $1.25';
+            sumPart1.style.width='30%'
             sumPart1.innerText = '$' + this.value * 1.25;
             one = this.value * 1.25;
             adding()
         } else {
             calculateProducts.innerText=''
-            sumPart1.innerText='Wprowadź dodalnią liczbę całkowitą'
+            sumPart1.style.width='250%';
+            sumPart1.innerText='Wprowadź dodatnią liczbę całkowitą'
             total.innerText=''
         }
         if (products.value.length < 1) {
@@ -45,12 +48,14 @@ document.addEventListener('DOMContentLoaded', function () {
     orders.addEventListener('input', function () {
         if (Number.isInteger(parseFloat(this.value)) && parseFloat(this.value) > 0) {
             calculateOrders.innerText=this.value + ' * $0.5';
+            sumPart2.style.width='30%'
             sumPart2.innerText='$'+this.value * 0.5;
             two = this.value * 0.5;
             adding()
         } else {
             calculateOrders.innerText=''
-            sumPart2.innerText='Wprowadź dodalnią liczbę całkowitą'
+            sumPart2.style.width='250%';
+            sumPart2.innerText='Wprowadź dodatnią liczbę całkowitą'
             total.innerText=''
         }
         if (orders.value.length < 1) {
@@ -67,9 +72,15 @@ document.addEventListener('DOMContentLoaded', function () {
     let dropdownImg = document.querySelector('.dropdownImg');
 
     dropdownBtn.addEventListener('click', function () {
-        dropdownContent.style.display = 'block';
-        dropdownBtnText.style.color = 'black';
-        dropdownImg.style.transform = 'rotate(180deg)';
+        dropdownContent.classList.toggle('clicked')
+        dropdownImg.classList.toggle('clicked')
+        // if (dropdownContent.style.display === 'none'){
+        //     dropdownContent.style.display = 'flex';
+        //     dropdownImg.style.transform = 'rotate(180deg)';
+        // } else {
+        //     dropdownContent.style.display = 'none';
+        //     dropdownImg.style.transform = 'rotate(360deg)'
+        // }
     });
 
     let options = document.querySelectorAll('option');
@@ -79,8 +90,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     for (let i = 0; i <options.length; i++) {
         options[i].addEventListener('click', function () {
-            dropdownImg.style.transform = 'rotate(180deg)';
-            dropdownContent.style.display = 'none';
+            dropdownBtnText.style.color = 'black';
+            dropdownContent.classList.toggle('clicked')
+            dropdownImg.classList.toggle('clicked')
             dropdownBtnText.innerText = this.value;
             packageType.innerText = this.value;
             switch (options[i].value) {
@@ -141,9 +153,16 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log(one+two+three+four+five)
     });
 
-// -------------------- 6 --------------------
+// ---------------- hamburger ----------------
+
+    const hamburger = document.querySelector('.navTrigger');
+    const sectionZero = document.querySelector('.section-0')
 
 
+    hamburger.addEventListener('click', function () {
+        hamburger.classList.toggle('active');
+        sectionZero.classList.toggle('visible')
+    });
 });
 
 

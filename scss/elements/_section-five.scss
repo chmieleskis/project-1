@@ -1,0 +1,170 @@
+.section-5 {
+  display: flex;
+  justify-content: center;
+  margin: 10rem 0 0 0;
+}
+
+.section-5 h1 {
+  padding-top: 0;
+}
+
+.info {
+  font-family: var(--font-o);
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  padding: 2.2rem 0 4rem 0;
+}
+
+.details {
+  font-family: var(--font-o);
+  font-size: 1.6rem;
+  text-decoration: none;
+  line-height: 2.2rem;
+  font-weight: 600;
+  color: var(--gray);
+  padding-right: 2rem;
+}
+
+.contact-icon{
+  padding-right: 1rem;
+}
+
+.form-box {
+  margin: 0 0 0 11.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-family: var(--font-o);
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: .33rem;
+  color: var(--blue);
+}
+
+.input-text {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--gray-form);
+  font-size: 1.8rem;
+  font-family: var(--font-r);
+  font-weight: 500;
+  line-height: 2.6rem;
+  padding: .5rem 0;
+  margin: .5rem 0 4rem 0;
+}
+
+.input-text:hover {
+  border-bottom: 1px solid var(--blue);
+}
+
+.input-text:focus {
+  border-bottom: 1px solid var(--blue);
+}
+
+.checkbox {
+  display: flex;
+}
+
+.checkbox-btn {
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  margin-top: 3rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 1px solid var(--gray-form);
+  border-radius: 4px;
+  cursor: pointer;
+  background: #ffffff;
+}
+
+.checkbox-btn:hover {
+  border: 1px solid var(--blue);
+}
+
+.checkbox-btn:checked {
+  background: #ffffff;
+  border: 1px solid var(--blue);
+}
+
+.checkbox-btn:checked:after {
+  content: url('../assets/Checkmark.svg');
+  display: block;
+  width: 1.2rem;
+  height: 1.2rem;
+  padding: .6rem;
+}
+
+.checkbox-btn:hover {
+  border: 1px solid var(--blue);
+}
+
+.checkbox p {
+  font-family: var(--font-o);
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  width: 40.5rem;
+  color: #707070;
+  padding: 3rem 0 2rem 1.6rem;
+}
+
+.btn {
+  display: block;
+  width: 22.6rem;
+  font-family: var(--font-o);
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  padding: 2rem 9.7rem;
+  border: 0;
+  border-radius: 35px;
+  background-color: var(--blue);
+  color: #ffffff;
+  margin: 2rem 0 0 0;
+  align-self: flex-end;
+  box-shadow: .5rem 1rem 1.4rem var(--blue-shadow);
+}
+
+.btn:hover {
+  border: 2px solid var(--deeppink);
+}
+
+.btn:active {
+  box-shadow: .5rem 1rem 1.4rem var(--deeppink);
+}
+
+@media (max-width: 1000px) {
+  .section-5 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .info-box {
+      width: 75%;
+    }
+    p {
+      width: 90%;
+    }
+    .form-box {
+      width: 75%;
+      margin: 5.5rem 0 0 0;
+      .btn {
+        width: 22.6rem;
+      }
+    }
+  }
+}
