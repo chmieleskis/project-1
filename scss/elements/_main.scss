@@ -1,0 +1,15 @@
+html {
+  font-size: 10px;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+.main-container {
+  width: 1352px;
+}
+@media (max-width: 1352px) {
+  .main-container {
+    width: 100%;
+  }
+}

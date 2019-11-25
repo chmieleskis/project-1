@@ -74,13 +74,6 @@ document.addEventListener('DOMContentLoaded', function () {
     dropdownBtn.addEventListener('click', function () {
         dropdownContent.classList.toggle('clicked')
         dropdownImg.classList.toggle('clicked')
-        // if (dropdownContent.style.display === 'none'){
-        //     dropdownContent.style.display = 'flex';
-        //     dropdownImg.style.transform = 'rotate(180deg)';
-        // } else {
-        //     dropdownContent.style.display = 'none';
-        //     dropdownImg.style.transform = 'rotate(360deg)'
-        // }
     });
 
     let options = document.querySelectorAll('option');

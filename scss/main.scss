@@ -1,33 +1,7 @@
-:root {
-  --font-o: "Open Sans", sans-serif;
-  --font-r: 'Raleway', sans-serif;
-
-  --deeppink: #FB3B64;
-  --blue: #08A6E4;
-  --aquamarine: #55DFB4;
-  --gray: #A5A5A5;
-  --lightgray: #F7F7F7;
-  --gray-shadow: #00000029;
-  --blue-shadow: #07ACE629;
-  --gray-form: #95989A
-}
-
-
-html {
-  font-size: 10px;
-}
-body {
-  display: flex;
-  justify-content: center;
-}
-.main-container {
-  width: 1352px;
-}
-@media (max-width: 1352px) {
-  .main-container {
-    width: 100%;
-  }
-}
+@import "generic/reset";
+@import "settings/colors";
+@import "settings/fonts";
+@import "elements/main";
 @import "elements/header";
 @import "elements/section-one";
 @import "elements/section-two";
