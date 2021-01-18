@@ -198,3 +198,16 @@ h3 {
     width: 85%;
   }
 }
+
+@media (max-width: 550px) {
+  .pricing-box {
+    flex-direction: column;
+    width: 85%; } }
+
+@media (max-width: 389px) {
+  .pricing-box {
+    .pricing-plans a {
+      margin-top: 4rem;
+    }
+  }
+}

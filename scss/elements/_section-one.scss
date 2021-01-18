@@ -49,3 +49,23 @@ h1 {
       background-size: auto 50%;
   }
 }
+
+@media (max-width: 600px) {
+  .section-1 {
+    div {
+    text-align: center;
+    padding: 2rem 2rem 0 2rem;
+    }
+    a {
+      padding: 2.2rem 8rem;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .section-1 {
+    h1 {
+      padding-top: 7rem;
+    }
+  }
+}

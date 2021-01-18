@@ -154,27 +154,24 @@
   display: block;
   float: left;
   width: 30%;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   line-height: 1.9rem;
 }
 
 .calcInfos p:nth-child(1) {
   color: white;
   padding-left: 2rem;
-  font-size: 1.3rem;
   margin-right: 5%;
 }
 
 .calcInfos p:nth-child(2) {
   color: white;
-  font-size: 1.3rem;
   text-align: center;
   margin-right: 5%;
 }
 
 .calcInfos p:nth-child(3) {
   color: white;
-  font-size: 1.3rem;
   font-weight: 700;
   margin-right: 2rem;
   text-align: right;
@@ -236,5 +233,56 @@
 @media (max-width: 1000px) {
   .sectionAdded {
     margin-top: 63rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .calculator {
+    width: 80%;
+    .calcInfos {
+      p {
+        font-size: 1rem;
+        margin-right: 0;
+      }
+      p:nth-child(1) {
+        padding-left: 1.5rem;
+      }
+      p:nth-child(3) {
+        padding-right: 1.5rem;
+      }
+    }
+    .summary{
+      .sum {
+        width: 25rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .calculator {
+    .calcInput::placeholder {
+      font-size: 1rem;
+    }
+    .dropdown {
+      p {
+        font-size: 1rem;
+      }
+    }
+    .calcInfos {
+      height: 3.5rem;
+    }
+    .summary{
+      .sum {
+        height: 4rem;
+        width: 100%;
+        p {
+          font-size: 1rem;
+        }
+        .total {
+          font-size: 1.3rem;
+        }
+      }
+    }
   }
 }
