@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 70%;
+  width: 90%;
   height: 60rem;
   margin-bottom: 9.5rem;
 }
@@ -143,26 +143,23 @@ h3 {
 @media (max-width: 1000px) {
   .pricing-box {
     flex-direction: column;
+    width: 50%;
     .pricing-plans {
       width: 85%;
       height: 60%;
       margin-bottom: 5.5rem;
-
       .offer {
         display: flex;
         align-items: center;
         margin-top: 5rem;
-
         .caption {
           width: 50%;
           height: 50%;
-
           h3 {
             margin-top: 0;
             padding-top: 0;
           }
         }
-
         .jist {
           width: 50%;
           align-items: flex-start;
@@ -178,5 +175,26 @@ h3 {
         margin-top: 8rem;
       }
     }
+  }
+}
+
+@media (max-width: 800px) {
+  .pricing-box {
+    flex-direction: column;
+    width: 60%;
+  }
+}
+
+@media (max-width: 700px) {
+  .pricing-box {
+    flex-direction: column;
+    width: 70%;
+  }
+}
+
+@media (max-width: 550px) {
+  .pricing-box {
+    flex-direction: column;
+    width: 85%;
   }
 }
